@@ -28,6 +28,7 @@ The backend provides:
 Two instances have been created for the backend.
 
 AWS: http://inventory-backend-env.eba-mmdhmy36.ap-south-1.elasticbeanstalk.com
+
 Railway: https://inventorybackend-production-0b9e.up.railway.app
 
 ---
