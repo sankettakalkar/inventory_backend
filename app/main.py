@@ -11,10 +11,12 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
+        "https://inventory-frontend.vercel.app",
         "https://inventory-frontend-gurvz847r-sankettakalkars-projects.vercel.app",
+        "https://inventory-frontend-ce8rlqtiu-sankettakalkars-projects.vercel.app",
     ],
     allow_credentials=False,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
