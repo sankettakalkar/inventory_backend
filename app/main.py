@@ -9,11 +9,7 @@ app = FastAPI(title="Inventory Management API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "https://inventory-frontend.vercel.app",
-        "https://inventory-frontend-8kee4l8ec-sankettakalkars-projects.vercel.app",
-    ],
+    allow_origins=["*"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
