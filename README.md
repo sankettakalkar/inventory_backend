@@ -25,11 +25,14 @@ The backend provides:
 
 ## Live Backend URL
 
-https://inventorybackend-production-0b9e.up.railway.app
+Two instances have been created for the backend.
+
+AWS: http://inventory-backend-env.eba-mmdhmy36.ap-south-1.elasticbeanstalk.com
+Railway: https://inventorybackend-production-0b9e.up.railway.app
 
 ---
 
-## Local Installation & Setup (MANDATORY)
+## Local Installation & Setup
 
 ### Prerequisites
 - Python 3.9+
@@ -38,7 +41,7 @@ https://inventorybackend-production-0b9e.up.railway.app
 
 ### Clone Repository
 ```bash
-git clone <backend-repo-url>
+git clone https://github.com/sankettakalkar/inventory_backend.git
 cd inventory-backend
 ```
 
@@ -78,44 +81,9 @@ Swagger UI:
 /docs
 ```
 
----
-
-## Local Setup Instructions
-
-### Prerequisites
-- Python 3.9+
-- PostgreSQL
-- Virtual environment (recommended)
-
-### Setup
-
-```bash
-git clone <backend-repo-url>
-cd inventory-backend
-python -m venv env
-source env/bin/activate
-pip install -r requirements.txt
+Health Check:
 ```
-
-### Environment Variables
-
-Create a `.env` file in the project root:
-
-```env
-DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<db_name>
-```
-
----
-
-## Run Backend Locally
-
-```bash
-uvicorn app.main:app --reload
-```
-
-Backend runs at:
-```
-http://127.0.0.1:8000
+/health
 ```
 
 ---
@@ -123,8 +91,10 @@ http://127.0.0.1:8000
 ## Database
 
 - PostgreSQL is used as the primary database
+- Database is needed to be created eg: inventory_db
 - Tables are created automatically via SQLAlchemy models
-- Managed PostgreSQL is used in production (Railway)
+- RDS PostgreSQL is used in production instance 1 on AWS
+- Managed PostgreSQL is used in production instance 2 on Railway
 
 ---
 
