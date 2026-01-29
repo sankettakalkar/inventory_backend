@@ -12,8 +12,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "https://inventory-frontend.vercel.app",
-        "https://inventory-frontend-gurvz847r-sankettakalkars-projects.vercel.app",
-        "https://inventory-frontend-ce8rlqtiu-sankettakalkars-projects.vercel.app",
+        "https://inventory-frontend-8kee4l8ec-sankettakalkars-projects.vercel.app",
     ],
     allow_credentials=False,
     allow_methods=["*"],
