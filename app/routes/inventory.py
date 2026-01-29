@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from app.models import InventoryItem
-from app.schemas import InventoryCreate, InventoryUpdate, InventoryResponse
+from app.schemas import InventoryCreate, InventoryUpdate
 from app.core.deps import get_db
 
 router = APIRouter(
