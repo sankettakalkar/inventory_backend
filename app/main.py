@@ -11,7 +11,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://inventorybackend-production-0b9e.up.railway.app"
+        "https://inventory-frontend-gurvz847r-sankettakalkars-projects.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
