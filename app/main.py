@@ -11,7 +11,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://inventory-frontend-sigma-mocha.vercel.app/"
+        "https://inventory-frontend-sigma-mocha.vercel.app"
     ],
     allow_credentials=False,
     allow_methods=["*"],
