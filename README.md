@@ -29,6 +29,48 @@ https://inventorybackend-production-0b9e.up.railway.app
 
 ---
 
+## Local Installation & Setup (MANDATORY)
+
+### Prerequisites
+- Python 3.9+
+- PostgreSQL
+- Git
+
+### Clone Repository
+```bash
+git clone <backend-repo-url>
+cd inventory-backend
+```
+
+### Create Virtual Environment
+```bash
+python -m venv env
+source env/bin/activate
+```
+
+### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### Environment Variables
+Create a `.env` file in project root:
+```env
+DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<db_name>
+```
+
+### Start Backend
+```bash
+uvicorn app.main:app --reload
+```
+
+Backend URL:
+```
+http://127.0.0.1:8000
+```
+
+---
+
 ## API Documentation
 
 Swagger UI:
